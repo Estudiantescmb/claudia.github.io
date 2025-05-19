@@ -1,0 +1,75 @@
+<head>
+
+    <h2>Lechuga Romana</h2>
+<head/>
+  <p>La lechuga romana es versátil en la cocina. Su textura crujiente y sabor ligeramente amargo la hacen perfecta para ensaladas frescas y saludables. </p>
+
+  <button onclick="window.modal1.showModal();">Abrir </button>
+
+  <dialog id="modal1">
+
+  <h3>fresca y versatil</h3>
+
+    <p>Es la elección tradicional para la clásica ensalada César, donde sus hojas robustas se mezclan con aderezos cremosos y crutones crujientes.</p>
+
+    <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTOa8x_cVxI8zL6qa6KPUtmdZAodWTDcQaA&s" alt="Descripción de la imagen"></p>
+
+  <button onclick="window.modal1.close();">Cerrar</button>
+  
+      </dialog>
+
+    
+     <h2>Lechuga hoja de roble</h2>
+<head/>
+  <p>La lechuga hoja de roble, también conocida como lechuga de roble o lechuga rizada, es una variedad de lechuga caracterizada por sus hojas onduladas y su color que va del verde al rojo burdeos.  </p>
+
+  <button onclick="window.modal2.showModal();">Abrir  </button>
+
+  <dialog id="modal2">
+
+  <h3>fresca y versatil</h3>
+
+    <p> Su sabor es suave y ligeramente dulce, y su textura tierna la hace ideal para ensaladas frescas.  </p>
+
+ 
+<img src="https://fundacionmujeresempresarias.org/wp-content/uploads/2021/04/lechuga-hoja-de-roble-morada.jpg" width="200" height="200" />
+  <button onclick="window.modal2.close();">Cerrar</button>
+      </dialog>
+  <h2>Lechuga batavia</h2>
+<head/>
+  <p>La lechuga batavia, también conocida como lechuga francesa o trocadero, es una variedad de lechuga de hoja suelta, con hojas rizadas y textura mantecosa. </p>
+
+  <button onclick="window.modal3.showModal();">Abrir </button>
+
+  <dialog id="modal3">
+
+  <h3>fresca y versatil</h3>
+
+    <p> Se caracteriza por un sabor ligeramente ácido, lo que la convierte en una buena combinación con otras lechugas de sabor más suave. </p>
+
+ 
+<img src="https://mercasur.com.co/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTQ2NjA2LCJwdXIiOiJibG9iX2lkIn19--0f4c6f6e408f6b8171cc1b70195c6987ec6e3015/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZml0IjpbODAwLDgwMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--1420d7fd3d20057726f0ef3c0043db24ca0403be/Sin%20t%C3%ADtulo-2.jpg?locale=es" width="200" height="200" />
+  <button onclick="window.modal3.close();">Cerrar</button>
+      </dialog>
+     
+
+     <h2>Lechuga francesa</h2>
+<head/>
+  <p>Con altos niveles de vitamina A, C y K, fortalece tus huesos, mejora tu visión y potencia tu sistema inmunológico.  </p>
+
+  <button onclick="window.modal4.showModal();">Abrir l</button>
+
+  <dialog id="modal4">
+
+  <h3>fresca y versatil</h3>
+
+    <p> Esta crujiente y refrescante lechuga es perfecta para ensaladas saludables, wraps deliciosos o como complemento en tus platillos favoritos.  </p>
+
+ 
+<img src="https://media.istockphoto.com/id/1387420863/es/foto/vista-superior-de-lechuga-butterhead-fresca-aislada.jpg?s=612x612&w=0&k=20&c=eiPbxtes-rJZ8pxmMvomegcyYUN7pgHjpfHCEPsbxPo=" width="200" height="200" />
+  <button onclick="window.modal4.close();">Cerrar</button>
+    </dialog>
+    
+  <h2>Lechuga iceberg</h2>
+<head/>
+  <p>La lechuga iceberg es el tipo de lechuga que má
