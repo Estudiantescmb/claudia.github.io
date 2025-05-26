@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lechugas y Recetas Frescas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0fff0;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #76c893, #34a0a4);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2a9d8f;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    footer {
+      background: #2a9d8f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Todo sobre Lechugas</h1>
+    <p>Frescas, crujientes y perfectas para tus recetas saludables</p>
+  </header>
+
+  <section class="intro">
+    <h2>¿Por qué amar la lechuga?</h2>
+    <p>La lechuga es una verdura de hoja verde rica en agua, fibra y nutrientes esenciales. Es baja en calorías, ideal para ensaladas y muy versátil en la cocina. ¡Te presentamos algunas recetas deliciosas para disfrutarla al máximo!</p>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; color:#34a0a4;">Catálogo de Recetas con Lechuga</h2>
+    <div class="catalogo">
+      <div class="card">
+        <h3>Ensalada César</h3>
+        <p>Lechuga romana, crutones, queso parmesano y aderezo César. Perfecta para una comida ligera pero sabrosa.</p>
+      </div>
+      <div class="card">
+        <h3>Tacos de Lechuga</h3>
+        <p>Usa hojas de lechuga en lugar de tortillas para una opción sin carbohidratos. Rellénalas con carne, vegetales y salsa.</p>
+      </div>
+      <div class="card">
+        <h3>Wraps Asiáticos</h3>
+        <p>Hojas de lechuga rellenas con pollo salteado, zanahoria, cebolla y salsa de soya. Una receta fresca y exótica.</p>
+      </div>
+      <div class="card">
+        <h3>Batido Verde</h3>
+        <p>Lechuga, manzana verde, pepino y limón. Una bebida desintoxicante y refrescante para comenzar el día.</p>
+      </div>
+      <div class="card">
+        <h3>Lechuga a la Parrilla</h3>
+        <p>Una forma diferente de disfrutarla: córtala por la mitad, un poco de aceite de oliva y a la parrilla. Acompaña con salsa balsámica.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Recetas Verdes | ¡Come sano, vive feliz!
+  </footer>
+</body>
+</html>
