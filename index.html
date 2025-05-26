@@ -1,205 +1,156 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delicias Caseras</title>
+  <style>
+    /* Paleta: Verde lima y blanco con acentos suaves */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4fff2;
+      color: #333;
+    }
 
-    <meta charset="UTF-8">
+    header {
+      background-color: #81e52d;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    nav {
+      background-color: #76c442;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 25px;
+    }
 
-    <title>Delicias Caseras</title>
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-    <style>
+    nav a:hover {
+      color: #333;
+    }
 
-        body {
+    .hero {
+      background-image: url('comida.jpg'); /* Usa tu imagen aquí */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
 
-            font-family: Arial, sans-serif;
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-            margin: 0;
+    .plato {
+      background-color: #ffffff;
+      border-left: 5px solid #81e52d;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
 
-            padding: 0;
+    .plato:hover {
+      transform: scale(1.02);
+    }
 
-        }
+    .plato h2 {
+      color: #5aa527;
+      margin-top: 0;
+    }
 
-        header {
+    footer {
+      background-color: #2e2e2e;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
 
-            background-color: #81E52D;
-
-            color: white;
-81E52D
-            padding: 20px;
-
-            text-align: center;
-
-        }
-
-        nav {
-
-            background-color #82D117
-
-            display: flex;
-
-            justify-content: center;
-
-            padding: 10px;
-
-        }
-
-        nav a {
-
-            color: black;
-
-            text-decoration: none;
-
-            margin: 0 15px;
-
-        }
-
-        .hero {
-
-            background-image: url('comida.jpg'); /* Cambia esta imagen */
-
-            background-size: cover;
-
-            background-position: center;
-
-            height: 350px;
-
-            text-align: center;
-
-            color: black;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            font-size: 3em;
-
-        }
-
-        main {
-
-            padding: 30px;
-
-        }
-
-        .plato {
-
-            border-bottom: 1px solid #50BD15;
-
-            margin-bottom: 20px;
-
-            padding-bottom: 120px;
-
-        }
-
-        footer {
-
-            background-color: #222;
-
-            color: black;
-
-            text-align: center;
-
-            padding: 15px;
-
-            margin-top: 20px;
-
-        }
-
-    </style>
-
+    @media (max-width: 600px) {
+      .hero {
+        font-size: 1.8rem;
+        height: 200px;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+    <h1>Tipos de Lechuga 😋</h1>
+    <p>¡Sorprendentemente extensas y deliciosas!</p>
+  </header>
 
+  <nav>
+    <a href="lechugas.html">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="recetas.html">Catálogo de Recetas</a>
+    <a href="#">Documentales</a>
+  </nav>
 
-    <header>
+  <div class="hero">
+    ¡Descubre nuestras lechugas favoritas!
+  </div>
 
-        <h1>Tipos de Lechuga :D </h1>
+  <main>
+    <section class="plato">
+      <h2>Lechuga Romana</h2>
+      <p>La lechuga romana es versátil en la cocina. Su textura crujiente y sabor ligeramente amargo la hacen perfecta para ensaladas frescas y saludables.</p>
+    </section>
 
-        <p> sorprendentemente extensas </p>
+    <section class="plato">
+      <h2>Lechuga Hoja de Roble</h2>
+      <p>Con hojas onduladas y tonos que van del verde al rojo burdeos, esta lechuga aporta color y suavidad a cualquier plato.</p>
+    </section>
 
-    </header>
+    <section class="plato">
+      <h2>Lechuga Batavia</h2>
+      <p>También conocida como lechuga francesa o trocadero, tiene hojas rizadas y textura mantecosa. Es ideal para ensaladas abundantes.</p>
+    </section>
 
+    <section class="plato">
+      <h2>Lechuga Francesa</h2>
+      <p>Rica en vitaminas A, C y K, fortalece los huesos, mejora la visión y potencia el sistema inmunológico.</p>
+    </section>
 
-    <nav>
+    <section class="plato">
+      <h2>Lechuga Iceberg</h2>
+      <p>De textura muy crujiente y sabor suave, es perfecta para sándwiches, hamburguesas y tacos.</p>
+    </section>
+  </main>
 
-        <a href="lechugas.html">Inicio</a>
-
-        <a href="#">Menú</a>
-
-        <a href="recetas.html">catalogo recetas</a>
-
-        <a href="#">documentales</a>
-
-    </nav>
-
-
-    <div class="hero">
-
-        ¡Descubre nuestras lechugas favoritos!
-
-    </div>
-
-
-    <main>
-
-        <section class="plato">
-
-            <h2>Lechuga Romana</h2>
-<head/>
-  <p>La lechuga romana es versátil en la cocina. Su textura crujiente y sabor 
-      ligeramente amargo la hacen perfecta para ensaladas frescas y saludables. </p>
-        </section>
-
-
-        <section class="plato">
-
-        
-     <h2>Lechuga hoja de roble</h2>
-<head/>
-  <p>La lechuga hoja de roble, también conocida como lechuga de roble o lechuga rizada,
-      es una variedad de lechuga caracterizada por sus hojas onduladas y su color que va del verde al rojo burdeos.  </p>
-
-        </section>
-        
-        <h2>Lechuga batavia</h2>
-<head/>
-  <p>La lechuga batavia, también conocida como lechuga francesa o trocadero, es una variedad de lechuga de hoja suelta, con hojas rizadas y textura mantecosa. </p>
-
-     <h2>Lechuga francesa</h2>
-<head/>
-  <p>Con altos niveles de vitamina A, C y K, fortalece tus huesos, mejora tu visión y potencia tu sistema inmunológico.  </p>
-
-     <h2>Lechuga iceberg</h2>
-<head/>
-  <p>La lechuga iceberg es el tipo de lechuga que más dura y tiene un color más blanquecino que las demás. Su textura es crujiente.
-      Su sabor es suave y algo acuoso y es la favorita para acompañar en sándwiches, hamburguesas, burritos.  </p>
-
-        <section class="plato">
-
-
-        
-
-    </main>
-
-    
-
-
-    <footer>
-
-        <p>&copy; 2025 Tipos de derechos reservados Todos los derechos reservados.</p>
-
-    </footer>
-
-
+  <footer>
+    <p>&copy; 2025 Delicias Caseras. Todos los derechos reservados.</p>
+  </footer>
 </body>
-
 </html>
+
 
   
 
