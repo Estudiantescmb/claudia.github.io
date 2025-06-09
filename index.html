@@ -1,11 +1,15 @@
+
+
+   
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Delicias Caseras</title>
   <style>
-    /* Paleta: Verde lima y blanco con acentos suaves */
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
@@ -15,7 +19,7 @@
     }
 
     header {
-      background-color: #81e52d;
+      background-color: #6cc020;
       color: #fff;
       text-align: center;
       padding: 30px 20px;
@@ -26,6 +30,7 @@
       background-color: #76c442;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 15px;
       gap: 25px;
     }
@@ -42,7 +47,7 @@
     }
 
     .hero {
-      background-image: url('comida.jpg'); /* Usa tu imagen aquí */
+      background-image: url('comida.jpg');
       background-size: cover;
       background-position: center;
       height: 300px;
@@ -68,16 +73,62 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: 30px;
       padding: 20px;
-      transition: transform 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .plato:hover {
       transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
     .plato h2 {
       color: #5aa527;
       margin-top: 0;
+    }
+
+    .videos {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .videos iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 10px;
+    }
+
+    .widgets {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      z-index: 1000;
+    }
+
+    .widget-btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background-color: #25d366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .widget-btn img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .insta {
+      background-color: #e1306c;
     }
 
     footer {
@@ -94,6 +145,7 @@
         height: 200px;
         text-align: center;
       }
+
       nav {
         flex-direction: column;
         gap: 10px;
@@ -102,6 +154,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>Tipos de Lechuga 😋</h1>
     <p>¡Sorprendentemente extensas y deliciosas!</p>
@@ -143,13 +196,29 @@
       <h2>Lechuga Iceberg</h2>
       <p>De textura muy crujiente y sabor suave, es perfecta para sándwiches, hamburguesas y tacos.</p>
     </section>
+
+    <section class="videos">
+      <iframe src="https://www.youtube.com/embed/qHwIFHzJAPY?si=s2qA7ZFEEPqo8-sb" title="Video Lechuga 1" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Qr5VAaRj5ec?si=dvB1-rQaoorpLXtE" title="Video Lechuga 2" allowfullscreen></iframe>
+    </section>
   </main>
+
+  <div class="widgets">
+    <a href="https://wa.me/573107501089" target="_blank" class="widget-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+    </a>
+    <a href="https://www.instagram.com/c1zzy._/" target="_blank" class="widget-btn insta">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+    </a>
+  </div>
 
   <footer>
     <p>&copy; 2025 Delicias Caseras. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
+
 
 
   
