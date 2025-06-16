@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>LPTM - Lanas y Peluches</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #f48fb1;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    section {
+      padding: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #c2185b;
+    }
+
+    .ejemplo, .producto {
+      background-color: #ffe4e1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      transition: background-color 0.3s;
+    }
+
+    .producto:hover {
+      background-color: #ffebef;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #c2185b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ad1457;
+    }
+
+    footer {
+      background-color: #f48fb1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🧸 LPTM</h1>
+    <p>Lanas, Peluches y Ternura Moderna</p>
+  </header>
+
+  <section>
+    <h2>📘 ¿Qué es &lt;script&gt;?</h2>
+    <p>Es una etiqueta HTML que permite agregar JavaScript para darle vida a tu página web. ¡Como nuestros productos tejidos, que están llenos de personalidad!</p>
+
+    <h2>📲 ¿Qué hace JavaScript?</h2>
+    <ul>
+      <li>🖱️ Cambia colores al pasar el mouse</li>
+      <li>💬 Muestra alertas</li>
+      <li>🛒 Calcula totales en un carrito</li>
+      <li>✅ Valida formularios</li>
+      <li>🎮 Crea experiencias interactivas</li>
+    </ul>
+
+    <div class="ejemplo">
+      <h3>💬 Dale clic para saludarte:</h3>
+      <button onclick="saludar()">¡Haz clic aquí!</button>
+    </div>
+
+    <div class="producto" id="cajaProducto" onmouseover="cambiarColor()" onmouseout="restaurarColor()">
+      <h3>🧵 Kit de Lanas Creativas</h3>
+      <p>Ideal para comenzar tu propio peluche hecho a mano.</p>
+      <button onclick="agregarCarrito(18000)">Agregar al carrito ($18.000)</button>
+    </div>
+
+    <h3>Total en carrito: $<span id="total">0</span></h3>
+  </section>
+
+  <footer>
+    © 2025 LPTM - Hecho con amor y creatividad en cada hilo 🧶
+  </footer>
+
+  <script>
+    function saludar() {
+      alert("¡Gracias por visitar LPTM! 💖");
+    }
+
+    let total = 0;
+    function agregarCarrito(precio) {
+      total += precio;
+      document.getElementById('total').innerText = total;
+      alert("Producto agregado 🛍️");
+    }
+
+    function cambiarColor() {
+      document.getElementById('cajaProducto').style.backgroundColor = '#fce4ec';
+    }
+
+    function restaurarColor() {
+      document.getElementById('cajaProducto').style.backgroundColor = '#ffe4e1';
+    }
+  </script>
+
+</body>
+</html>
