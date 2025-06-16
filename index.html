@@ -1,221 +1,113 @@
 
 
-   
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <title>Delicias Caseras</title>
+  <meta charset="UTF-8">
+  <title>Pelucheando - Aprende JavaScript con ternura</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;
+      color: #333;
       margin: 0;
       padding: 0;
-      background-color: #f4fff2;
-      color: #333;
     }
-
     header {
-      background-color: #6cc020;
-      color: #fff;
+      background-color: #f48fb1;
+      color: white;
       text-align: center;
       padding: 30px 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-
-    nav {
-      background-color: #76c442;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 15px;
-      gap: 25px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #333;
-    }
-
-    .hero {
-      background-image: url('comida.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 1000px;
+    section {
+      padding: 20px;
+      max-width: 900px;
       margin: auto;
     }
-
-    .plato {
-      background-color: #ffffff;
-      border-left: 5px solid #81e52d;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
+    h2 {
+      color: #c2185b;
+    }
+    .entrada {
+      background-color: #ffe4e1;
       padding: 20px;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .plato:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .plato h2 {
-      color: #5aa527;
-      margin-top: 0;
-    }
-
-    .videos {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      margin-top: 50px;
-    }
-
-    .videos iframe {
-      width: 100%;
-      height: 315px;
       border-radius: 10px;
+      margin: 15px 0;
+      transition: background-color 0.3s;
     }
-
-    .widgets {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      z-index: 1000;
+    .entrada:hover {
+      background-color: #ffebf0;
     }
-
-    .widget-btn {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      background-color: #25d366;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    }
-
-    .widget-btn img {
-      width: 24px;
-      height: 24px;
-    }
-
-    .insta {
-      background-color: #e1306c;
-    }
-
     footer {
-      background-color: #2e2e2e;
-      color: #eee;
+      background-color: #f48fb1;
+      color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        font-size: 1.8rem;
-        height: 200px;
-        text-align: center;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
+      padding: 15px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Tipos de Lechuga 😋</h1>
-    <p>¡Sorprendentemente extensas y deliciosas!</p>
+    <h1>🧸 Pelucheando</h1>
+    <p>Lanas, ternura y aprendizaje web</p>
   </header>
 
-  <nav>
-    <a href="lechugas.html">Inicio</a>
-    <a href="#">Menú</a>
-    <a href="recetas.html">Catálogo de Recetas</a>
-    <a href="#">Documentales</a>
-  </nav>
+  <section>
+    <h2>🧠 Aprende JavaScript con ejemplos peluchísticos</h2>
 
-  <div class="hero">
-    ¡Descubre nuestras lechugas favoritas!
-  </div>
+    <div class="entrada">
+      <h3>1. ¿Qué es &lt;script&gt;?</h3>
+      <p>Es una etiqueta HTML que permite agregar instrucciones JavaScript dentro de una página.</p>
+    </div>
 
-  <main>
-    <section class="plato">
-      <h2>Lechuga Romana</h2>
-      <p>La lechuga romana es versátil en la cocina. Su textura crujiente y sabor ligeramente amargo la hacen perfecta para ensaladas frescas y saludables.</p>
-    </section>
+    <div class="entrada">
+      <h3>2. JavaScript es el cerebro</h3>
+      <p>JavaScript le dice a tu página cómo moverse, responder o actuar cuando alguien hace clic o escribe algo.</p>
+    </div>
 
-    <section class="plato">
-      <h2>Lechuga Hoja de Roble</h2>
-      <p>Con hojas onduladas y tonos que van del verde al rojo burdeos, esta lechuga aporta color y suavidad a cualquier plato.</p>
-    </section>
+    <div class="entrada">
+      <h3>3. Cambiar de color al pasar el mouse</h3>
+      <p>Con JavaScript puedes hacer que un objeto cambie de color al tocarlo con el puntero.</p>
+    </div>
 
-    <section class="plato">
-      <h2>Lechuga Batavia</h2>
-      <p>También conocida como lechuga francesa o trocadero, tiene hojas rizadas y textura mantecosa. Es ideal para ensaladas abundantes.</p>
-    </section>
+    <div class="entrada">
+      <h3>4. Mostrar mensajes</h3>
+      <p>Usando <code>alert()</code> puedes mostrar mensajes emergentes al usuario.</p>
+    </div>
 
-    <section class="plato">
-      <h2>Lechuga Francesa</h2>
-      <p>Rica en vitaminas A, C y K, fortalece los huesos, mejora la visión y potencia el sistema inmunológico.</p>
-    </section>
+    <div class="entrada">
+      <h3>5. Calcular totales</h3>
+      <p>JavaScript puede sumar productos en un carrito y mostrar el total.</p>
+    </div>
 
-    <section class="plato">
-      <h2>Lechuga Iceberg</h2>
-      <p>De textura muy crujiente y sabor suave, es perfecta para sándwiches, hamburguesas y tacos.</p>
-    </section>
+    <div class="entrada">
+      <h3>6. Validar formularios</h3>
+      <p>Antes de enviar un formulario, puedes usar JavaScript para revisar que los campos estén completos.</p>
+    </div>
 
-    <section class="videos">
-      <iframe src="https://www.youtube.com/embed/qHwIFHzJAPY?si=s2qA7ZFEEPqo8-sb" title="Video Lechuga 1" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/Qr5VAaRj5ec?si=dvB1-rQaoorpLXtE" title="Video Lechuga 2" allowfullscreen></iframe>
-    </section>
-  </main>
+    <div class="entrada">
+      <h3>7. Crear juegos</h3>
+      <p>Con unas líneas de JavaScript puedes hacer juegos básicos y divertidos, como adivina el número.</p>
+    </div>
 
-  <div class="widgets">
-    <a href="https://wa.me/573107501089" target="_blank" class="widget-btn">
-      <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
-    </a>
-    <a href="https://www.instagram.com/c1zzy._/" target="_blank" class="widget-btn insta">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
-    </a>
-  </div>
+    <div class="entrada">
+      <h3>8. Conectarse con otros sitios</h3>
+      <p>JavaScript puede comunicarse con otros servicios para obtener datos en tiempo real (como clima o precios).</p>
+    </div>
+
+    <div class="entrada">
+      <h3>9. Controlar animaciones</h3>
+      <p>Puede animar objetos, mover peluches o hacer que algo se oculte y aparezca.</p>
+    </div>
+
+    <div class="entrada">
+      <h3>10. Automatizar acciones</h3>
+      <p>JavaScript permite automatizar tareas como mostrar mensajes según la hora o saludar al visitante.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Delicias Caseras. Todos los derechos reservados.</p>
+    © 2025 Pelucheando - Aprende con ternura y código 🧵
   </footer>
-
 </body>
 </html>
 
