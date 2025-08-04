@@ -1,166 +1,165 @@
-Archivo principal: index.html
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Fuerzas en Equilibrio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #fff5f5;
-      color: #2c3e50;
-    }
-    header {
-      background-color: #c0392b;
-      color: white;
-      text-align: center;
-      padding: 30px;
-    }
-    nav {
-      background-color: #e74c3c;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .contenido {
-      padding: 20px;
-      text-align: center;
-    }
-    .contenido img {
-      max-width: 90%;
-      height: auto;
-      border: 5px solid #e74c3c;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-    footer {
-      background-color: #c0392b;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Fuerzas en Movimiento - Proyecto de Ciencias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #e63946;
+            color: white;
+            padding: 20px;
+        }
+        .content {
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #457b9d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1d3557;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        iframe {
+            margin: 20px 0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Proyecto: Fuerzas en Equilibrio</h1>
-    <h3>Claudia Montenegro - Grado 9°</h3>
-  </header>
+<header>
+    <h1>Proyecto de Ciencias: Fuerzas en Movimiento</h1>
+</header>
 
-  <nav>
-    <a href="objetivo.html">Objetivo</a>
-    <a href="simulador.html">Simulador</a>
-    <a href="personajes.html">Personajes</a>
-    <a href="aisladores.html">Aisladores</a>
-    <a href="conclusiones.html">Conclusiones</a>
-  </nav>
+<div class="content">
+    <h2>Video Explicativo</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bOIoX1LlhvE" frameborder="0" allowfullscreen></iframe>
 
-  <div class="contenido">
-    <p>Explora cómo las fuerzas en equilibrio ayudan a proteger estructuras en zonas sísmicas.</p>
-    <img src="Fuerzas en equilibrio.png" alt="Fuerzas en Equilibrio">
+    <h2>Simulador de Sismos (Ejemplo)</h2>
+    <iframe src="https://earthquake.usgs.gov/earthquakes/map/" width="600" height="400"></iframe>
+
+    <h2>Explora nuestro proyecto:</h2>
+    <button id="btn1">¿Qué es la Física?</button>
+    <button id="btn2">Física Dinámica</button>
+    <button id="btn3">Isaac Newton</button>
+    <button id="btn4">Aisladores Sísmicos</button>
+    <button id="btn5">Simulador con Arduino</button>
+</div>
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal1">&times;</span>
+    <h2>¿Qué es la Física?</h2>
+    <p>La física es la ciencia que estudia cómo se comporta la materia, la energía y las fuerzas. Nos ayuda a entender fenómenos como el movimiento, el equilibrio y las leyes que rigen el universo.</p>
   </div>
+</div>
 
-  <footer>
-     Claudia Montenegro | Colegio Musical Británico
-  </footer>
-</body>
-</html>
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal2">&times;</span>
+    <h2>Física Dinámica</h2>
+    <p>La física dinámica estudia los cuerpos en movimiento y las fuerzas que los afectan. En nuestro proyecto analizamos cómo se equilibran las fuerzas para proteger edificios de los sismos.</p>
+  </div>
+</div>
 
+<!-- Modal 3 -->
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal3">&times;</span>
+    <h2>Isaac Newton</h2>
+    <p>Isaac Newton formuló las leyes del movimiento y la gravitación universal. Su segunda ley explica cómo la fuerza afecta la aceleración de un cuerpo, clave para entender nuestro proyecto.</p>
+  </div>
+</div>
 
- objetivo.html
+<!-- Modal 4 -->
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal4">&times;</span>
+    <h2>Aisladores Sísmicos</h2>
+    <p>Los aisladores sísmicos son dispositivos que se colocan en la base de los edificios para absorber el movimiento del suelo durante un terremoto. Existen de goma, metálicos y de péndulo.</p>
+  </div>
+</div>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Objetivo</title>
-</head>
-<body>
-  <h1>Objetivo del Proyecto</h1>
-  <p>Demostrar la utilidad de los aisladores sísmicos en estructuras modernas mediante una maqueta funcional, entendiendo los principios de la física que permiten el equilibrio de fuerzas en un sistema.</p>
-  <a href="index.html">Volver al inicio</a>
-</body>
-</html>
+<!-- Modal 5 -->
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <span class="close" data-close="modal5">&times;</span>
+    <h2>Simulador con Arduino</h2>
+    <p>Construimos un simulador de sismos usando Arduino y un servomotor, el cual mueve una plataforma para demostrar cómo los aisladores reducen el impacto del movimiento.</p>
+  </div>
+</div>
 
+<script>
+// Abrir modales
+document.getElementById("btn1").onclick = () => document.getElementById("modal1").style.display = "block";
+document.getElementById("btn2").onclick = () => document.getElementById("modal2").style.display = "block";
+document.getElementById("btn3").onclick = () => document.getElementById("modal3").style.display = "block";
+document.getElementById("btn4").onclick = () => document.getElementById("modal4").style.display = "block";
+document.getElementById("btn5").onclick = () => document.getElementById("modal5").style.display = "block";
 
-simulador.html
+// Cerrar modales
+document.querySelectorAll(".close").forEach(el => {
+    el.onclick = () => {
+        document.getElementById(el.dataset.close).style.display = "none";
+    };
+});
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Simulador</title>
-</head>
-<body>
-  <h1>Simulador con Arduino</h1>
-  <p>Usamos Arduino y un servomotor para simular el movimiento de un terremoto. El sistema mueve una plataforma donde va colocada la maqueta para observar el efecto del aislamiento sísmico.</p>
-  <a href="index.html">Volver al inicio</a>
-</body>
-</html>
+// Cerrar al hacer clic fuera del modal
+window.onclick = function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+</script>
 
-
- personajes.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Personajes Históricos</title>
-</head>
-<body>
-  <h1>Personajes Históricos</h1>
-  <ul>
-    <li><strong>Isaac Newton:</strong> Segunda ley del movimiento. F = m x a</li>
-    <li><strong>Galileo Galilei:</strong> Estudó la aceleración y el movimiento de cuerpos.</li>
-    <li><strong>Albert Einstein:</strong> Profundizó en el concepto de inercia y teorías modernas del movimiento.</li>
-  </ul>
-  <a href="index.html">Volver al inicio</a>
-</body>
-</html>
-
-
- aisladores.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Tipos de Aisladores</title>
-</head>
-<body>
-  <h1>Tipos de Aisladores Sísmicos</h1>
-  <ul>
-    <li><strong>Aisladores de caucho:</strong> Muy comunes, permiten flexibilidad.</li>
-    <li><strong>Péndulo de fricción:</strong> Se basa en un sistema de péndulo que disipa energía.</li>
-    <li><strong>Sistemas de rodillos:</strong> Permiten el desplazamiento lateral.</li>
-  </ul>
-  <a href="index.html">Volver al inicio</a>
-</body>
-</ conclusiones.html
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Conclusiones</title>
-</head>
-<body>
-  <h1>Conclusiones</h1>
-  <p>El aislamiento sísmico mejora la estabilidad de las construcciones y reduce el riesgo de daños graves. Aplicar conocimientos de la física en la ingeniería civil salva vidas y protege estructuras.</p>
-  <a href="index.html">Volver al inicio</a>
 </body>
 </html>
 
